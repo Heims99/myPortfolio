@@ -1,0 +1,7 @@
+Header 
+Home
+About me
+Qulification (Skills and Experiance)
+Portfolio
+Contact Us
+Footer 
