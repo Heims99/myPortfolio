@@ -247,7 +247,7 @@ img {
 
 /* Main section title */
 .section__title {
-  font-size: var(--font-size-big);             /* 2rem */
+  font-size: var(--font-size-h1);             /* 2rem */
   font-family: var(--font-accent);             /* Bold display headings */
   font-weight: var(--font-weight-bold);        /* Strong emphasis */
 }
@@ -255,7 +255,7 @@ img {
 /* Subheading style */
 .section__subtitle {
   display: block;
-  font-size: var(--font-size-sm);              /* 0.813rem */
+  font-size: var(--font-size-h3);              /* 0.813rem */
   font-family: var(--font-secondary);          /* Rounded modern accent font */
   font-weight: var(--font-weight-medium);
   margin-bottom: var(--mb-3);                  /* 3rem bottom spacing */
@@ -457,23 +457,20 @@ img {
 
 /* ===================== HOME ================== */
 
-.home {
-  min-height: 90vh;                        /* Ensures the section takes up most of the viewport height */
-  display: flex;                           /* Enables flexible layout */
-  flex-direction: column;                  /* Stack children vertically */
-  justify-content: space-between;          /* Distribute space between top and bottom content */
-  margin-top: var(--mb-3);                 /* Top spacing using your spacing scale */
-  margin-bottom: var(--mb-2);              /* Bottom spacing */
-  padding-bottom: 0;                       /* No extra padding below */
+.home{
+    height: 70vh;
+    align-content: space-between;
+    margin-top: 10rem; /* Adjusted for better alignment */;
+    padding-bottom: 0;
+    margin-bottom: var(--mb-1-25);
 }
-
 
 .home__container{
     display: flex;
     gap: 1.75rem;
     padding-left: 0;
-    margin-left: var(--mb-1);
-    justify-content: space-around;
+    margin-left: var(--mb-0-1);
+    justify-content:center;
     align-items: center;
 }
 
@@ -484,9 +481,9 @@ img {
     padding-top: var(--mb-2-5);
     align-items: center;
     height: auto;
-    align-content: space-between;
+    align-content: ;
     margin-right: var(--mb-0-25);
-    margin-left: 0;
+    margin-left: 4rem; /* Adjusted for better alignment */
 }
 
 .home__social{
@@ -497,34 +494,35 @@ img {
     column-gap: 0;
     padding-top: 2rem;
     margin: 0;
+    margin-left: var(--mb-0-5) ;
 }
 
 .home__social-icon{
-    font-size: 1.45rem;
+    font-size: 1.25rem;
     color: var(--first-color);
 }
 .home__social-icon:hover{
-    color: var(--first-color-alt);
+    color: var(--first-color-second);
 }
 
 .home__data{
     grid-area: home__content;
-    width: 800px;
+    width: 600px;
     align-content: center;
     text-align: center;
-    transform: translateX(-7rem);
+    transform: translateX(-4rem);
 }
 
 .home__welcome{
     text-align: center;
-    font-size: var(--font-size-h1);
+    font-size: var(--font-size-h2);
     color: var(--text-color);
-    padding: 0 1.5rem;
+    padding:0rem;
 }
 
 .home__title{
     text-align: center;
-    font-size: var(--font-size-h2);
+    font-size: var(--font-size-h3);
     color: var(--text-color);
     margin-top: var(--mb-1-5);
     padding-bottom: 1rem;
@@ -533,29 +531,28 @@ img {
 #typewriter{
     margin-top: var(--mb-1);
     margin-bottom: var(--mb-2);
-    color: var(--text-color);
 }
 
 .Typewriter__wrapper{
     text-align: center;
-    font-size: var(--font-size-h2);
-    font-family: var(--font-mono);
-    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-h1);
+    font-family: var(--font-ui);
+    font-weight: var(--font-weight-medium);
     color: var(--mainText);
 }
 
 .Typewriter__cursor{
     font-size: var(--font-size-h1);
-    color: var(--first-color);
-    font-family: var(--font-mono);
-    font-weight: var(--font-weight-semibold);
+    color: var(--text-color);
+    font-family: var(--font-ui);
+    font-weight: var(--font-weight-bold);
 }
 
 .home__subtitle{
     text-align: center;
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-h3);
     color: var(--text-color);
-    font: weight 600px;;
+    font-weight: 200;
     margin-bottom: var(--mb-1);
     padding: 1rem 1.5rem 1rem 1.5rem;
 }
@@ -585,50 +582,42 @@ img {
 }
 
 .home__scroll{
-    display: absolute;
+    display: flex;
     justify-content: center;
-    margin-top: 5;
+    margin-top: 0;
     animation: scrollDown 3s infinite;
-     transform: translateX(-5rem);
-    
 
 }
 
 .home__scroll-button{
     color: var(--first-color);
-    transition: .3s;
+    transition: .5s;
 }
 .home__scroll-button:hover{
-    color: var(--text-color);
+    color: var(--first-color-alt);
     transform: translateY(.25rem);
 }
 
 .home__scroll-mouse{
-    font-size: var(--font-size-h1);
-    margin-top: 5px; /* No top margin */
-  
-    transform: translateX(3.5rem);
+    font-size: var(--big-font-size);
+    margin-top: var(--mb-3);
 }
 
 .home__scroll-name{
-    font-size: var(--font-size-h3);
-    color: var(--first-color);
-    font-weight: var(--font-weight-medium);
-    margin: 5px;; /* Margin for spacing */
-    transform: translateX(3rem);
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    margin: var(--mb-0-25);
 }
 
 .home__scroll-arrow{
-    font-size: var(--font-size-h2);
-    margin-top: 0; /* No top margin */
-
-    transform: translateX(2.5rem);
+    font-size: var(--h3-font-size);
 }
-
 /* ===================== ABOUT ================== */
 .about{
-    padding-top: 1rem;
+    padding-top: 3%;
     margin-top: 7rem;
+    
 }
 .about__img{
     width: 200px;
@@ -651,14 +640,13 @@ img {
 }
 
 .about__info-title{
-    font-size: var(--h2-font-size);
-    font-weight: var(--font-semi-bold);
-    color: var(--title-color);
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-color);
 }
-
 .about__info-name{
-    font-size: var(--smaller-font-size);
-    font-family: var(--roboto-font);
+    font-size: var(--font-size-h3);
+    font-family: var(--font-ui);
     color: var(--text-color-light);
 }
 
@@ -671,6 +659,7 @@ img {
 .about__buttons{
     display: flex;
     justify-content: center;
+
 }
 
 /* ===================== SKILLS ================== */
